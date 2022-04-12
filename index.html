@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Front-End Internship Task</title>
+  </head>
+  <body>
+    <div class="imagesList">
+      <button id="moreImgBtn">GET MORE IMAGES</button>
+    </div>
+
+    <div class="imgPreviewContainer">
+      <img id="imagePreview" />
+      <div id="imageInfo"></div>
+      <div class="filtersDiv hidden">
+        <div id="grayscaleDiv" class="hidden">
+          <span>Filters:</span>
+
+          <label for="grayscale" id="grayscaleLabel">Grayscale</label>
+          <input
+            type="checkbox"
+            name="grayscale"
+            id="grayscaleFilter"
+            class="hidden"
+          />
+        </div>
+        <div id="blurDiv" class="hidden">
+          <label for="blur" id="blurLabel">Blur</label>
+          <input
+            type="range"
+            name="blur"
+            id="blurFilter"
+            min="1"
+            max="10"
+            step="1"
+            class="hidden"
+            value="1"
+            ;
+          />
+        </div>
+      </div>
+      <div id="imgInfo"></div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

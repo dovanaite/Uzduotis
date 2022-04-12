@@ -1,0 +1,106 @@
+body{
+    display: flex;
+    width:100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin:0;
+    height: 100vh;
+    background-color: rgb(226, 226, 213);
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.smallImg{
+    width:200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#moreImgBtn{
+    position: fixed; 
+    width:200px;
+    bottom:1vh;
+    height:30px;
+    padding:5px;
+    margin:5px;
+    background-color: rgb(103, 103, 105);
+    font-family: "Lucida Console", "Courier New", monospace;
+    color:antiquewhite;
+    border-radius: 5px;
+}
+
+#moreImgBtn:hover{
+    background-color: rgb(25, 72, 94);
+    cursor: pointer;
+    box-shadow: 5px 2px 2px rgb(161, 161, 154);
+}
+
+.imagesList{
+    width:230px;
+    height:92vh;
+    overflow-y: scroll;
+    margin:5px 5px 5px 10px;
+}
+
+.imgPreviewContainer{
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 230px);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#imagePreview{
+    height: 75vh;
+    object-fit: contain;
+    border: none;
+    box-shadow: 10px 5px 5px rgb(161, 161, 154);
+}
+
+#imageInfo{
+    margin:30px;
+}
+
+span{
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.filtersDiv{
+    width: 35vw;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+#grayscaleDiv{
+    height:5vh;
+    padding:10px;
+    display: flex;
+    align-items:center;
+}
+
+#blurDiv{
+    height:5vh;
+    padding:10px;
+    margin:2px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+input, label{
+    margin:10px;
+}
+
+#grayscaleFilter{
+    height: 20px;
+    width: 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+.bold{
+    font-weight: bold;
+}
